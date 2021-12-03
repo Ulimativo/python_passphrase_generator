@@ -22,6 +22,12 @@ def gen_phrase(word_num):
         phrases=phrases+elements[selector]+"-"
     return print(f"{phrases[:-1]}")
 
-gen_phrase(3)
+while True:
+    try:
+        words=int(input("Wie viele Wörter möchtest du benutzen? "))
+        break
+    except:
+        print("Keine Zahl. Bitte gib eine Zahl ein: ")
+gen_phrase(words)
 
 
